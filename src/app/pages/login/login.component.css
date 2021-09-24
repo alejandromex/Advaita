@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main-login{
+    background-image: url('../../../assets/img/montains.jpg');
+    background-position-y: -150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+@media(max-width:1500px)
+{
+    .main-login{
+        background-position-y: 0px;
+    }
+}
+
+.mask{
+    background-color: rgba(0, 0, 0, 0.568);
+    width: 100%;
+    height: 100%;
+}
+
+.content-login{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-top{
+    text-align: center;
+}
+
+.login-top img{
+    width: 250px;
+    border-radius: 900px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border: 5px solid rgba(255, 255, 255, 0.61);; */
+}
+
+.form-login{
+    display: inline-block;
+    width: 100%;
+}
+
+.input-field{
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 900px;
+    background-color: rgba(128, 128, 128, 0.137);
+    color: rgba(255, 255, 255, 0.733);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input-field input[type="text"],
+.input-field input[type="password"]
+{
+    border: none;
+    margin-left: 5px;
+    padding: 10px;
+    max-height: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.input-field i{
+    font-size: 30px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.input-field input[type="text"]::placeholder,
+.input-field input[type="password"]::placeholder
+ { 
+    color: rgba(255, 255, 255, 0.493);
+    opacity: 1; 
+  }
+
+
+  .btn-login{
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.637);
+      border:  1px solid rgba(255, 255, 255, 0.521);
+      cursor: pointer;
+      transition: 300ms ease all;
+  }
+
+  .btn-login:hover{
+    background-color: rgba(128, 128, 128, 0.719);
+  }
+
+  .new-recovery{
+      margin-top: 10px;
+      color: rgba(255, 255, 255, 0.589);
+  }
+
+  .new-recovery small{
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+
+  .new-recovery small a{
+      color: rgba(130, 166, 219, 0.801);
+      text-decoration: none;
+  }

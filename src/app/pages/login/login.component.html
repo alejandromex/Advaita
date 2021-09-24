@@ -1,0 +1,34 @@
+<div class="main-login">
+    <div class="mask">
+
+        <div class="content-login">
+            <div [@inOutAnimation] class="login-top">
+                <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+                <img src="../../../assets/img/AdvaitaLogo.png" alt="">
+                
+                    <div class="form-login">
+                        <div class="input-field">
+                            <i class="far fa-user"></i>
+                            <input placeholder="Correo Electronico" [(ngModel)]="email" type="text" name="email"  id="">
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input [(ngModel)]="password" placeholder="Contraseña" type="password" name="password"  id="">
+                        </div>
+                        <div class="new-recovery">
+                            <small>
+                                ¿Nuevo? Registrate <a href="">Aqui</a>
+                            </small>
+                            <small>
+                                ¿Contraseña olvidada? <a href="">Recuperar</a>
+                            </small>
+                        </div>
+                        <input type="submit" class="btn-login" value="Iniciar Sesion"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
