@@ -23,7 +23,7 @@ img{
 
 
 .sidebar{
-    width: 50px;
+    /* width: 50px; */
     height: 100vh;
     position: fixed;
     background-color: #3A5199;
@@ -208,7 +208,6 @@ textarea:focus, input:focus{
 .main-container{
     min-height: 100vh;
     width: calc(100% - 280px);
-    padding: 60px 60px 20px 60px;
 }
 
 .menu-actions{

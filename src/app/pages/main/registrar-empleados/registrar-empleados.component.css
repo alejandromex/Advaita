@@ -1,0 +1,131 @@
+
+.sidebar-reg{
+    background-color: #0c4bcc;
+    position: fixed;
+    height: 100%;
+    width: 8%;
+    text-align: center;
+    color:white;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main-registrar{
+   background-color: #f7f8fc;
+   min-height: 100vh;
+   width: 100%;
+}
+
+.main-reg-content{
+    margin-left: 170px;
+    width: calc(100% - 170px);
+}
+
+.open-menu{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.open-menu i{
+    cursor: pointer;
+}
+
+.top-ref{
+    height: 40px;
+    text-align: center;
+}
+
+.top-ref img{
+    width: 100px;
+}
+
+.tabla-reg{
+    background-color: #ffffff;
+    width: 90%;
+    min-height: 400px;
+    margin: 40px auto;
+}
+
+.header-tabla-reg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-tabla-reg div{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.header-tabla-reg .btn-refresh
+{
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 13px 20px;
+    background-color: #2f2e33;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu-reg ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    transition: 300ms ease all;
+}
+
+.menu-reg ul li:hover{
+    color: rgb(31, 202, 224);
+    border-bottom: 2px solid rgb(31, 202, 224);
+}
+
+.selected{
+    color: #0c4bcc;
+    border-bottom: 2px solid #0c4bcc;
+    font-weight: bold;
+}
+
+.buscador-reg{
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 8px;
+    width: 90%;
+    margin: 20px auto;;
+}
+
+.buscador-reg i{
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.buscador-reg input[type="text"]
+{
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    width: 70%;
+}
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.input-field input[type="text"]::placeholder,
+.input-field input[type="password"]::placeholder
+ { 
+    color: rgba(255, 255, 255, 0.493);
+    opacity: 1; 
+  }
+
+  select{
+      width: 20%;
+      padding: 10px;
+      border: none;
+  }

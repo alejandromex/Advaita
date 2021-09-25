@@ -1,0 +1,196 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.empresas{
+}
+
+img{
+    max-width: 100%;
+}
+
+.cover-photo{
+    background-image: url('../../../../assets/arbol-redes.jpg');
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+}
+
+.mask{
+    background-color: rgba(0, 0, 0, 0.562);
+    width: 100%;
+    height: 200px;
+}
+
+.profile-photo-empresa{
+    position: absolute;
+    bottom:  -70px;
+    left: 64px;
+}
+
+.profile-photo-empresa img{
+    width: 140px;
+    height: 140px;
+    border-radius: 900px;
+}
+
+.empresas-grid{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.datos-contacto{
+    width: 80%;
+    margin: 20px auto;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.datos-contacto h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.datos-contacto i {
+    margin-right: 10px;
+}
+.datos-contacto span{
+    color: #969696;
+    font-weight: bold;
+}
+
+.contacto{
+    margin-bottom: 10px;
+}
+
+.personal-info{
+    padding-bottom: 15px;
+    padding-top: 80px;
+    background-color: #3a5199;
+    color: white;
+}
+
+.head-personal-info{
+    text-align: center;
+}
+
+.head-personal-info small{
+    color:rgb(179, 179, 179);
+}
+
+.head-personal-info h2{
+    margin-bottom: 5px;
+}
+
+
+.badges{
+    width: 80%;
+    margin: 20px auto;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    padding-bottom: 10px;
+}
+
+.insignias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.badges h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.insignia{
+    border-radius: 900px;
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.aptitudes{
+    width: 80%;
+    margin: 20px auto;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    padding-bottom: 10px;
+}
+
+.aptitudes ul li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.aptitudes h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.empresas-info{
+    background-color: rgb(124, 124, 124);
+    padding: 20px 0px 20px 20px;
+}
+
+.empresas-info h1{
+    color: white;
+}
+
+.list-empresas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+    row-gap: 20px;
+}
+
+.header-empresas-info{
+    padding: 20px;
+}
+
+.empresa{
+    background-color: white;
+    height: 280px;
+    box-shadow: 0px 0px 10px black;
+    position: relative;
+}
+
+.top-empresa{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    font-weight: bold;
+}
+
+.top-empresa img{
+    width: 40px;
+}
+
+.middle-empresa ul li{
+    list-style: none;
+    margin-bottom: 3px;
+    padding-left: 10px;
+}
+
+.middle-empresa ul li span{
+    color: #3a5199;
+    font-weight: bold;
+}
+
+.footer-empresa{
+    position: absolute;
+    bottom: 0px;
+    padding: 20px;
+    width: 100%;
+    left: 20px;
+}
+
+.footer-empresa a{
+    text-decoration: none;
+    color:#3a5199;
+    font-weight: bold;
+}
