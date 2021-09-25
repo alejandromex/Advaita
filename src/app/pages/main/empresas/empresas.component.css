@@ -1,0 +1,66 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+img{
+    max-width: 100% !important;
+}
+
+.empresas-main{
+    background-color: red;
+}
+
+.content-empresas{
+    width: 10px;
+}
+
+.empresas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.empresa-box-top h2{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.empresa-box-top img{
+    width: 150px;
+    height: 160px;
+    border-radius: 30px;
+}
+
+.datos-profile{
+    display: flex;
+    align-items: center;
+}
+
+.datos-profile div{
+    margin-left: 10px;
+}
+
+.datos-profile p{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.datos-profile small{
+    color: gray;
+    margin-top: 2px;
+}
+
+.activo{
+    padding: 8px 10px;
+    border: 1px solid green;
+    background-color: green;
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
