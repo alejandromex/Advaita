@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
+import { CertificationsComponent } from './pages/main/certifications/certifications.component';
 import { EmpresasComponent } from './pages/main/empresas/empresas.component';
 import { MainComponent } from './pages/main/main.component';
 import { RegistrarEmpleadosComponent } from './pages/main/registrar-empleados/registrar-empleados.component';
@@ -10,10 +11,15 @@ import { RegistrarEmpleadosComponent } from './pages/main/registrar-empleados/re
 
 const routes: Routes = [
     {path: 'login', component: LoginComponent},
-    {path: 'home', component: MainComponent, children:[
-      {path: 'empresas', component: EmpresasComponent},
+    {path: '', component: MainComponent, children:[
+      {path: '', component: EmpresasComponent}
     ]},
-    {path: 'registro', component: RegistrarEmpleadosComponent}
+    {path: 'home', component: MainComponent, children:[
+      {path: '', component: EmpresasComponent},
+      {path: 'empresas', component: EmpresasComponent},
+      {path: 'certification', component: CertificationsComponent}
+    ]},
+    {path: 'registro', component: RegistrarEmpleadosComponent},
 ];
 
 @NgModule({

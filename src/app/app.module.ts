@@ -9,6 +9,7 @@ import { MainComponent } from './pages/main/main.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { EmpresasComponent } from './pages/main/empresas/empresas.component';
 import { RegistrarEmpleadosComponent } from './pages/main/registrar-empleados/registrar-empleados.component';
+import { CertificationsComponent } from './pages/main/certifications/certifications.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RegistrarEmpleadosComponent } from './pages/main/registrar-empleados/re
     MainComponent,
     SidebarComponent,
     EmpresasComponent,
-    RegistrarEmpleadosComponent
+    RegistrarEmpleadosComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,
