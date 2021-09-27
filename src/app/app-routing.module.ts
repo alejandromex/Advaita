@@ -5,7 +5,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { CertificationsComponent } from './pages/main/certifications/certifications.component';
 import { EmpresasComponent } from './pages/main/empresas/empresas.component';
 import { MainComponent } from './pages/main/main.component';
-import { RegistrarEmpleadosComponent } from './pages/main/registrar-empleados/registrar-empleados.component';
+import { MisdatosComponent } from './pages/main/misdatos/misdatos.component';
+import { RegistrarEmpleadosComponent } from './pages/registrar-empleados/registrar-empleados.component';
 
 
 
@@ -17,6 +18,7 @@ const routes: Routes = [
     {path: 'home', component: MainComponent, children:[
       {path: '', component: EmpresasComponent},
       {path: 'empresas', component: EmpresasComponent},
+      {path: 'misdatos', component: MisdatosComponent},
       {path: 'certification', component: CertificationsComponent}
     ]},
     {path: 'registro', component: RegistrarEmpleadosComponent},

@@ -1,4 +1,6 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { TrabajoService } from 'src/app/services/trabajo.service';
 
 @Component({
   selector: 'app-empresas',
@@ -7,40 +9,55 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpresasComponent implements OnInit {
 
+  idEmpresa: string;
+  nombre: string = "";
+  apellidoP: string = "";
+  email: string = "";
+  phone: string = "";
+  imagen: string = "";
 
-  constructor() { }
+  constructor(
+    private trabajoService: TrabajoService
+  ) { }
 
   ngOnInit(): void {
 
-    const labels = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-    ];
-    const data = {
-      labels: labels,
-      datasets: [{
-        label: 'My First dataset',
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
-        data: [0, 10, 5, 2, 20, 30, 45],
-      }]
-    };
-  
-    const config = {
-      type: 'line',
-      data: data,
-      options: {}
-    };
 
-    // var myChart = new Chart(
-    //   document.getElementById('myChart'),
-    //   config
-    // );
+    var usuario = JSON.parse(localStorage.getItem("Usuario"));
+    this.nombre = usuario.nombre;
+    this.apellidoP = usuario.apellidoP;
+    this.email = usuario.email;
+    this.phone = usuario.phone;
+    this.imagen = usuario.imagen;
+
   
+  }
+
+  Solicitar()
+  {
+    if(this.idEmpresa != "")
+    {
+      if(localStorage.getItem("Usuario"))
+      {
+        var usuario = JSON.parse(localStorage.getItem("Usuario"));
+        var usuarioDTO = {
+          IdEmpleado: Number(usuario.id),
+          IdEmpresa: 1,
+          Nombre: usuario.nombre,
+          Desc: "Registro Empresa"
+        };            
+
+        this.trabajoService.CrearSolicitudTrabajo(usuarioDTO).subscribe(
+          resp=>{
+            console.log(resp);
+          },
+          error =>{
+            console.log(error);
+          }
+        )
+
+      }
+    }
   }
 
 }

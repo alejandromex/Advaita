@@ -1,15 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Usuario } from '../interfaces/Usuario';
 
 @Injectable({
     providedIn: 'root'
 })
-export class UserService {
+export class TrabajoService {
 
-
-    url: string = "http://localhost:1144/api/usuario/";
+    
+    url: string = "http://localhost:1144/api/Trabajo/";
 
     constructor(
         private httpClient: HttpClient
@@ -18,17 +17,17 @@ export class UserService {
 
     }
 
-
-    Login(email: string, password: string): Observable<any>
+    CrearSolicitudTrabajo(usuario):Observable<any>
     {
         let headers = new HttpHeaders().set("ContentType","application/json");
-        return this.httpClient.post(this.url+"login", {Email: email, Password: password}, {headers} );
+        return this.httpClient.post(this.url+"solicitar", usuario, {headers});
     }
 
-    Register(user: Usuario)
+    TraerSolicitudes(idEmpresa: string)
     {
         let headers = new HttpHeaders().set("ContentType","application/json");
-        return this.httpClient.post(this.url+"register",user, {headers});
+        return this.httpClient.get(this.url+"solicitudes/"+idEmpresa,{headers});
     }
+
 
 }

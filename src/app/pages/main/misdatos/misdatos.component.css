@@ -1,0 +1,139 @@
+.mis-datos-main{
+    margin: 0 auto;
+    width: 80%;
+    min-height: 100vh;
+    background-color: #f9fbfc;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px #222;
+}
+
+.top-mis-datos{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top-mis-datos img{
+    width: 120px;
+    border-radius: 900px;
+    height: 140px;
+    margin-right: 40px;
+}
+
+.datos{
+    width: 40%;
+}
+
+.btn-edit-profile{
+    position: absolute;
+    right: 0px;
+    top: 50px;
+}
+
+.middle-mis-datos{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.m-dato{
+    font-size: 20px;
+}
+
+.m-dato i{
+    font-size: 25px;
+    margin-right: 7px;
+}
+
+.content-datos-middle{
+    width: 80%;
+    margin: 30px auto;
+}
+
+.content-datos-middle ul li{
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+    margin-left: 20px;
+    padding-bottom: 15px;
+    padding: 10px;
+    transition: 300ms ease all;
+}
+
+.content-datos-middle ul li:hover{
+    color: #3a6b99;
+    font-weight: bold;
+    border-bottom: 1px solid #3a5199;
+}
+
+.selected
+{
+    border-bottom: 1px solid #3a5199;
+    color: #3a5199;
+    font-weight: bold;
+}
+
+.menu-datos{
+    margin-bottom: 20px;
+}
+
+.contenido-menu-datos{
+    width: 95%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.trabajo-exp{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    width: 95%;
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.trabajo-exp-content{
+    border-bottom: 1px solid rgba(172, 172, 172, 0.719);
+}
+
+.trabajo-exp-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trabajo-exp-top p{
+    margin-bottom: 0px;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.trabajo-exp img{
+    width: 40px;
+}
+
+.evidencias{
+    display: flex;
+    justify-content: space-around;
+}
+
+.evidencias img{
+    width: 200px;
+}
+
+.persona-supervisor span{
+    color: #3a6b99;
+    font-weight: bold;
+    font-size: 18px;
+}

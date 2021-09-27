@@ -54,6 +54,15 @@ img{
     width: 100%;
 }
 
+.reg{
+    width: 800px;
+}
+
+.reg-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .input-field{
     margin: 0 auto;
     width: 70%;
@@ -70,7 +79,9 @@ img{
 
 
 .input-field input[type="text"],
-.input-field input[type="password"]
+.input-field input[type="password"],
+.input-field input[type="file"],
+select
 {
     border: none;
     margin-left: 5px;
@@ -79,13 +90,23 @@ img{
     font-size: 20px;
     background-color: transparent;
     color: white;
+    width: 80%;
+}
+
+option{
+    background-color: black;
+    color: white;
+}
+
+select{
+    padding: 8px;
 }
 
 .input-field i{
     font-size: 30px;
 }
 
-textarea:focus, input:focus{
+textarea:focus, input:focus, select:focus{
     outline: none;
 }
 

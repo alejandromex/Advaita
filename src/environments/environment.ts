@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  accountName : "imagesadvaita",
+  containerName:"images-user",
+   key:"2eC6Ygf+mvO39m8RzIez2XESzb+J260lXo2UFrKzU+LJbSAgdEOx7DGsasn8ePBBm7gWF5mspPATENkrDMmhmA=="
 };
 
 /*

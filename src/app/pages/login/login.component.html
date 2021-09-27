@@ -2,22 +2,22 @@
     <div class="mask">
 
         <div class="content-login">
-            <div [@inOutAnimation] class="login-top">
-                <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+            <div class="login-top">
+                <form *ngIf="!isTheRegisterActive" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
                 <img src="../../../assets/img/AdvaitaLogo.png" alt="">
                 
                     <div class="form-login">
                         <div class="input-field">
                             <i class="far fa-user"></i>
-                            <input placeholder="Correo Electronico" [(ngModel)]="email" type="text" name="email"  id="">
+                            <input placeholder="Correo Electronico" [(ngModel)]="email" type="text" name="email"  >
                         </div>
                         <div class="input-field">
                             <i class="fas fa-lock"></i>
-                            <input [(ngModel)]="password" placeholder="Contraseña" type="password" name="password"  id="">
+                            <input [(ngModel)]="password" placeholder="Contraseña" type="password" name="password"  >
                         </div>
                         <div class="new-recovery">
-                            <small>
-                                ¿Nuevo? Registrate <a href="">Aqui</a>
+                            <small >
+                                ¿Nuevo? Registrate <a (click)="showRegistro()" style="cursor: pointer;">Aqui</a>
                             </small>
                             <small>
                                 ¿Contraseña olvidada? <a href="">Recuperar</a>
@@ -26,6 +26,57 @@
                         <input type="submit" class="btn-login" value="Iniciar Sesion"/>
                     </div>
                 </form>
+
+                <form #registerForm="ngForm" class="reg" (ngSubmit)="register(registerForm)" *ngIf="isTheRegisterActive" >
+                    <img src="../../../assets/img/AdvaitaLogo.png" alt="">
+                    <div class="form-login reg-grid">
+
+                        <div class="input-field">
+                            <i class="far fa-id-card"></i>
+                            <select [(ngModel)]="type" name="type" >
+                                <option value="1">Usuario</option>
+                                <option value="2">Empresa</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-user-alt"></i>
+                            <input placeholder="Nombre" type="text" name="name" [(ngModel)]="name" >
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-user-alt"></i>
+                            <input placeholder="Apellido Paterno" type="text" name="apellidoP" [(ngModel)]="apellidoP" >
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-user-alt"></i>
+                            <input placeholder="Apellido Materno" type="text" name="apellidoM" [(ngModel)]="apellidoM" >
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-phone"></i>
+                            <input placeholder="Celular" type="text" name="celular" [(ngModel)]="celular" >
+                        </div>
+                        <div class="input-field">
+                            <i class="far fa-images"></i>
+                            <input (change)="onChange($event)" placeholder="Imagen" type="file" name="imagen" >
+                        </div>
+
+                        <div class="input-field">
+                            <i class="far fa-user"></i>
+                            <input placeholder="Correo Electronico" [(ngModel)]="email" type="text" name="email"  >
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input [(ngModel)]="password" placeholder="Contraseña" type="password" name="password"  >
+                        </div>
+                        <div class="new-recovery">
+                            <small >
+                                ¿Tienes una cuenta?  <a (click)="showRegistro()" style="cursor: pointer;">Aqui</a>
+                            </small>
+                        </div>
+                        <input type="submit" class="btn-login" value="Registrar"/>
+                    </div>
+                
+                </form>
+
             </div>
         </div>
     </div>
